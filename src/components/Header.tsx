@@ -10,7 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Menu, LogOut, User, BookOpen, Users, School } from 'lucide-react';
+import { Menu, LogOut, User, BookOpen, Users, School, Calendar, Award, Video, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
 
 export const Header = () => {
@@ -19,9 +19,12 @@ export const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Schools', href: '/schools' },
+    { name: 'Find Schools', href: '/schools' },
     { name: 'Volunteers', href: '/volunteers' },
     { name: 'Events', href: '/events' },
+    { name: 'Resources', href: '/resources' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   // Dashboard link based on user role
@@ -42,7 +45,7 @@ export const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
-            <div className="h-8 w-8 edconnect-gradient rounded-md flex items-center justify-center">
+            <div className="h-8 w-8 bg-gradient-to-r from-orange-500 to-amber-200 rounded-md flex items-center justify-center">
               <span className="text-white font-bold">EC</span>
             </div>
             <span className="font-bold text-xl">EdConnect</span>
