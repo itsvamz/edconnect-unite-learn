@@ -70,7 +70,7 @@ export const SidebarNav = ({ className }: SidebarNavProps) => {
   
   const links = getLinksForUserRole(user.role);
   
-  const roleIcon = user.role === 'student' 
+  const RoleIcon = user.role === 'student' 
     ? GraduationCap 
     : user.role === 'volunteer' 
       ? Users 
@@ -82,7 +82,7 @@ export const SidebarNav = ({ className }: SidebarNavProps) => {
         <div className="px-3 py-2">
           <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight">
             <div className="flex items-center gap-2">
-              <roleIcon.type className="h-5 w-5 text-edconnect-orange" />
+              <RoleIcon className="h-5 w-5 text-edconnect-orange" />
               <span className="capitalize">{user.role}</span>
             </div>
           </h2>

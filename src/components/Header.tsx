@@ -31,7 +31,7 @@ export const Header = () => {
       ? '/volunteer/dashboard' 
       : '/school/dashboard';
 
-  const userIcon = user?.role === 'student' 
+  const UserIcon = user?.role === 'student' 
     ? BookOpen 
     : user?.role === 'volunteer' 
       ? Users 
@@ -87,7 +87,7 @@ export const Header = () => {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
                   <Link to={dashboardLink} className="cursor-pointer flex items-center">
-                    <userIcon.type className="mr-2 h-4 w-4" />
+                    <UserIcon className="mr-2 h-4 w-4" />
                     <span>Dashboard</span>
                   </Link>
                 </DropdownMenuItem>
