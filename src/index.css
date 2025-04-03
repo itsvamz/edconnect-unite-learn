@@ -94,6 +94,59 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Accessibility Features */
+  .high-contrast {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    
+    --primary: 240 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 0%;
+    
+    --accent: 240 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 240 100% 50%;
+  }
+  
+  .large-text {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+  
+  .large-text h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .large-text h2 {
+    font-size: 2rem !important;
+  }
+  
+  .large-text h3 {
+    font-size: 1.75rem !important;
+  }
+  
+  .large-text button,
+  .large-text a {
+    font-size: 1.25rem !important;
+  }
 }
 
 @layer components {
