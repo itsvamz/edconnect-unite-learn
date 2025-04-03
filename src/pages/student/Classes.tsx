@@ -2,7 +2,7 @@
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar as CalendarIcon, Video, FileText, MessageSquare, Clock, Calendar, Users } from "lucide-react";
+import { CalendarIcon, Video, FileText, MessageSquare, Clock, Users } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { useState } from "react";
@@ -98,6 +98,7 @@ const StudentClasses = () => {
                   selected={date}
                   onSelect={setDate}
                   initialFocus
+                  className="pointer-events-auto"
                 />
               </PopoverContent>
             </Popover>
@@ -130,7 +131,7 @@ const StudentClasses = () => {
                   <div className="grid gap-4 md:grid-cols-2">
                     <div className="space-y-2">
                       <div className="flex items-center">
-                        <Calendar className="mr-2 h-4 w-4 text-muted-foreground" />
+                        <CalendarIcon className="mr-2 h-4 w-4 text-muted-foreground" />
                         <span>{classItem.date}</span>
                       </div>
                       <div className="flex items-center">
@@ -176,7 +177,7 @@ const StudentClasses = () => {
                   <div className="grid gap-4 md:grid-cols-2">
                     <div className="space-y-2">
                       <div className="flex items-center">
-                        <Calendar className="mr-2 h-4 w-4 text-muted-foreground" />
+                        <CalendarIcon className="mr-2 h-4 w-4 text-muted-foreground" />
                         <span>{classItem.date}</span>
                       </div>
                       <div className="flex items-center">
